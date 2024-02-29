@@ -20,23 +20,23 @@ const CountDownRenderer = ({ days, hours, minutes, seconds, completed }: Props) 
                 </div>) : (
                     <div className="container">
                         <div className="flex justify-center" >
-                            <div className={`countdown-item p-4 text-center text-[40px] ${styles.kode_mono}`}>
-                                <div className="countdown-number" id="countdown-days">{days ? days : 0}</div>
-                                <div className="countdown-label">days</div>
+                            <div className={`countdown-item p-4 text-center ${styles.kode_mono}`}>
+                                <div className="countdown-number text-[60px]" id="countdown-days">{days ? days : 0}</div>
+                                <div className="countdown-label text-[30px]">days</div>
                             </div>
-                            <div className={`countdown-item p-4 text-center text-[40px] ${styles.kode_mono}`}>
-                                <div className="countdown-number" id="countdown-hours">{hours ? hours : 0}</div>
-                                <div className="countdown-label">hours</div>
-                            </div>
-
-                            <div className={`countdown-item p-4 text-center text-[40px] ${styles.kode_mono}`}>
-                                <div className="countdown-number" id="countdown-minutes">{minutes ? minutes : 0}</div>
-                                <div className="countdown-label">minutes</div>
+                            <div className={`countdown-item p-4 text-center ${styles.kode_mono}`}>
+                                <div className="countdown-number text-[60px]" id="countdown-hours">{hours ? hours : 0}</div>
+                                <div className="countdown-label text-[30px]">hours</div>
                             </div>
 
-                            <div className={`countdown-item p-4 text-center text-[40px] ${styles.kode_mono}`}>
-                                <div className="countdown-number" id="countdown-seconds">{seconds ? seconds : 0}</div>
-                                <div className="countdown-label">seconds</div>
+                            <div className={`countdown-item p-4 text-center ${styles.kode_mono}`}>
+                                <div className="countdown-number text-[60px]" id="countdown-minutes">{minutes ? minutes : 0}</div>
+                                <div className="countdown-label text-[30px]">minutes</div>
+                            </div>
+
+                            <div className={`countdown-item p-4 text-center ${styles.kode_mono}`}>
+                                <div className="countdown-number text-[60px]" id="countdown-seconds">{seconds ? seconds : 0}</div>
+                                <div className="countdown-label text-[30px]">seconds</div>
                             </div>
                         </div>
                     </div>)}

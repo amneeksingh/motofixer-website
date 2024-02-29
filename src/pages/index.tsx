@@ -19,14 +19,14 @@ export default function Home() {
                     />
                     <footer className="footer p-10 flex-col flex justify-center items-center text-white">
                         <div className="social-links p-1 flex space-x-2">
-                            {socialMediaLinks.map(socialMediaLink => (
-                                <Link href={socialMediaLink.link} target="_blank" className="w-14 h-14 rounded-full bg-black opacity-60 text-center m-auto flex justify-center items-center">
+                            {socialMediaLinks.map((socialMediaLink, idx) => (
+                                <Link href={socialMediaLink.link} key={`sl-${idx}`} target="_blank" className="w-14 h-14 rounded-full bg-black opacity-60 text-center m-auto flex justify-center items-center">
                                     <socialMediaLink.Icon color="white" className="" />
                                 </Link>
                             ))}
                         </div>
                         <div className="copyright-section p-1">
-                            <p className="text-center copyright">&copy; MotoFixer 2024. Designed by <a href="https://www.linkedin.com/in/amneek-singh/" target="_blank">Amneek</a>.<br />
+                            <p className="text-center copyright">&copy; MotoFixer 2024. Designed by <Link href="https://www.linkedin.com/in/amneek-singh/" target="_blank">Amneek</Link>.<br />
                             </p>
                         </div>
                     </footer>
