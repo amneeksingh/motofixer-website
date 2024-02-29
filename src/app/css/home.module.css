@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Nunito:wght@300&family=Poppins:wght@800&family=Readex+Pro:wght@400;500&display=swap');
+
+.background {
+    background-image: url('/assets/images/purple.jpg');
+    background-size: cover;
+    background-position: center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+.kode_mono {
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
