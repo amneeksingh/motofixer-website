@@ -6,7 +6,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     return (
         <>
             <Head>
-                <title>MotoFixer - Comming Soon</title>
+                <title>MotoFixer - Coming Soon</title>
             </Head>
             <Component {...pageProps} />
         </>
