@@ -98,7 +98,7 @@
 }
 
 @media (max-width: 991.98px) {
-    .navbar-light .navbar-nav .nav-link  {
+    .navbar-light .navbar-nav .nav-link {
         margin-right: 0;
         padding: 10px 0;
     }
@@ -169,7 +169,7 @@
         position: relative;
         min-height: 450px;
     }
-    
+
     #header-carousel .carousel-item img {
         position: absolute;
         width: 100%;
@@ -188,7 +188,7 @@
     background: rgba(0, 0, 0, .7);
 }
 
-.breadcrumb-item + .breadcrumb-item::before {
+.breadcrumb-item+.breadcrumb-item::before {
     color: var(--light);
 }
 
@@ -380,4 +380,36 @@
     margin-right: 0;
     padding-right: 0;
     border-right: none;
+}
+
+.loader {
+    width: 100vw;
+    height: 100%;
+    z-index: 99999;
+    position: fixed;
+    background-color: white;
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader_progressbar {
+    width: 300px;
+    height: 10px;
+    background-color: #F2F2F2;
+    /* align-self: center; */
+    border-radius: 8px;
+}
+
+.loader_progressbar_bar {
+    width: 5%;
+    height: 100%;
+    background-color: #B8101F;
+    border-radius: 8px;
+}
+
+.loader_progressbar_percentage {
+    margin-top: 8px;
 }
